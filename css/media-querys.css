@@ -1,0 +1,73 @@
+/* HEADER */
+@media (max-width: 710px) {
+  #header {
+    display: none;
+  }
+  #hamburger,
+  #hamburger span,
+  .mobile-l {
+    display: block;
+  }
+  #mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  #mobile-ul.active {
+    right: -2.2rem;
+  }
+}
+/* HERO */
+@media (max-width: 710px) {
+  #hero-section {
+    flex-direction: column-reverse;
+  }
+  #hero-section-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  #profile-picture {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  .section {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  #hero-section-text {
+    font-size: 1rem;
+  }
+}
+/* PROJECTS */
+@media (max-width: 768px) {
+  .project,
+  .project-reverse {
+    flex-direction: column;
+  }
+  .project-img img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .project-img #reverse {
+    margin: 0 auto;
+  }
+}
+/* CONTACT ME */
+@media (max-width: 710px) {
+  .p-card {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+/* Footer */
+@media (max-width: 325px) {
+  .footer {
+    font-size: 0.55rem;
+  }
+}
