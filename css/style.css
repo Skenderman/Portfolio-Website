@@ -118,6 +118,7 @@ h3 {
   transform: translateY(-12px) rotate(-45deg);
 }
 #mobile-ul {
+  display: none;
   position: absolute;
   background-color: var(--main-white);
   padding-left: 1rem;
