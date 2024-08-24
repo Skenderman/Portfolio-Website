@@ -247,6 +247,7 @@ h3 {
 .p-card {
   display: flex;
   justify-content: space-around;
+  flex-direction: row-reverse;
   align-items: center;
   margin-top: 2rem;
 }
@@ -256,11 +257,75 @@ h3 {
   font-weight: 400;
 }
 .card p {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 /* FOOTER */
 .footer {
   display: flex;
   justify-content: space-around;
   font-size: 0.8rem;
+}
+/* RESUME */
+.resume-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resume-t h2 {
+  margin-bottom: 2rem;
+}
+.resume-p p:first-of-type,
+.resume-p p:nth-of-type(2) {
+  color: var(--main-gray);
+  font-weight: 400;
+  max-width: 70%;
+  min-width: 300px;
+  margin-bottom: 4rem;
+  font-size: calc(14px + 0.390625vw);
+}
+
+#project-showcase .splide__slide img {
+  border-radius: 30px;
+  height: 500px;
+  object-fit: inherit;
+  max-width: 325px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 50px 1px;
+}
+#project-showcase .splide__slide {
+  max-width: 325px;
+  padding: 4rem 2rem;
+}
+#project-showcase .splide__pagination__page.is-active {
+  background-color: var(--blue-);
+}
+#project-showcase .splide__pagination__page {
+  background-color: var(--main-gray);
+}
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.skill-underline {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-weight: 600;
+}
+.skills p {
+  margin-left: 5rem;
+}
+#skills-showcase {
+  border-bottom: 1px solid var(--main-black);
+}
+#contacting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contacting div:last-of-type {
+  display: flex;
+  flex-direction: column;
 }

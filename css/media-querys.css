@@ -71,3 +71,27 @@
     font-size: 0.55rem;
   }
 }
+/* RESUME */
+@media (max-width: 710px) {
+  .resume-p {
+    flex-direction: column;
+  }
+  .resume-t {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .resume-t p {
+    display: inline-block;
+  }
+}
+@media (max-width: 325px) {
+  .resume-t p {
+    font-size: 0.8rem;
+  }
+}
+/* CONTACT/RESUME */
+@media (max-width: 912px) {
+  #contacting div:last-of-type {
+    margin-top: 3rem;
+  }
+}
