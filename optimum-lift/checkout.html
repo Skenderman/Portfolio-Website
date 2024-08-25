@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimum Lift - Check Out</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ca9945fa9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container navbar">
+        <a href="index.html"
+          ><h2><i class="fa-solid fa-dumbbell"></i> Optimum Lift</h2></a
+        >
+        <ul class="navbar-ul">
+          <li class="navbar-list"><a href="index.html">Home</a></li>
+          <li class="navbar-list"><a href="learn-more.html">Learn More</a></li>
+          <li class="navbar-list">
+            <a href="index.html#reviews">Testimonials</a>
+          </li>
+          <li class="navbar-list"><a href="index.html#faq">FAQ</a></li>
+          <li class="navbar-list">
+            <a href="index.html#about-us">About Us</a>
+          </li>
+          <li class="navbar-list"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <button class="shop-now">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="checkout.html">Shop Now</a>
+        </button>
+        <div id="hamburger-wrapper">
+          <button class="shop-now-mobile">
+            <a href="checkout.html">
+              <i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </button>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <ul class="nav-bar-mobile">
+              <li class="nav-mobile"><a href="index.html">Home</a></li>
+              <li class="nav-mobile">
+                <a href="learn-more.html">Learn More</a>
+              </li>
+              <li class="nav-mobile"><a href="#reviews">Testimonials</a></li>
+              <li class="nav-mobile"><a href="#faq">FAQ</a></li>
+              <li class="nav-mobile"><a href="#about-us">About Us</a></li>
+              <li class="nav-mobile">
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <li class="nav-mobile menu-shop">
+                <a href="checkout.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <section class="section">
+      <div class="container">
+        <div class="checkout-wrapper">
+          <div class="shipping-wrapper">
+            <p>Choose your payment method</p>
+            <div class="card">
+              <input
+                type="image"
+                class="payment-method"
+                src="./img/PayPal.svg"
+                alt="paypal"
+              />
+              <input
+                type="image"
+                class="payment-method"
+                src="./img/Apple_Pay_logo.svg"
+                alt="apple pay"
+              />
+              <input
+                type="image"
+                class="payment-method"
+                src="./img/Visa_Inc._logo.svg"
+                alt="VISA"
+              />
+              <input
+                type="image"
+                class="payment-method"
+                src="./img/Mastercard-logo.svg"
+                alt="Mastercard"
+              />
+            </div>
+            <div class="shipping-c">
+              <label for="Country">Country/Region</label>
+              <select name="country" id="country">
+                <option selected disabled value="-">
+                  Choose your Country/Region
+                </option>
+                <option value="Albania">Albania</option>
+                <option value="Kosova">Kosova</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Greece">Greece</option>
+                <option value="United States">United States</option>
+                <option value="Ireland">Ireland</option>
+              </select>
+            </div>
+            <div class="shipping-i">
+              <div>
+                <input type="text" placeholder="First Name" id="firstname" />
+                <input type="text" placeholder="Last Name" id="lastname" />
+              </div>
+              <input type="text" placeholder="Adress" id="adress" />
+              <input
+                type="text"
+                placeholder="Apartament, suite, etc. (ptional)"
+                id="adress-optional"
+              />
+              <div>
+                <input type="text" placeholder="City" id="city" />
+                <input type="text" placeholder="ZIP Code" id="zip" />
+              </div>
+              <button class="blue">Complete Order</button>
+            </div>
+          </div>
+          <div class="checkout-img">
+            <img src="./img/file.png" alt="10 Week Fitness Workout Plan" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="container sFin">
+        <div>
+          <h2><i class="fa-solid fa-dumbbell"></i> Optimum Lift</h2>
+        </div>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a> &nbsp;
+          <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a> &nbsp;
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a> &nbsp;
+          <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a> &nbsp;
+        </div>
+      </div>
+      <div class="container sFin-2">
+        <div>
+          <p>Copyright © 2024 OptimumLift &nbsp; &nbsp; &nbsp;</p>
+        </div>
+        <div>
+          <p>
+            All Rights Reserved | <a href="#">Terms and Conditions</a> |
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.contact-usbg {
+  background: url(../img/contact-usbg.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+.contact-us-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4.5rem;
+  border-radius: 30px;
+}
+.contact-us-wrapper div:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-wrapper div:first-of-type input {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px groove var(--gray-color);
+  margin-top: 1%;
+}
+.contact-us-wrapper div:first-of-type input:focus {
+  outline-style: none;
+}
+.contact-us-wrapper div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-wrapper div:last-of-type textarea {
+  height: 250px;
+  width: 300px;
+  hyphenate-limit-chars: 500;
+  margin-bottom: 5%;
+}
+.contact-us-wrapper div:last-of-type textarea:focus {
+  outline-style: none;
+}
+.contact-us-wrapper div:last-of-type textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width: 425px) {
+  .contact-us-wrapper {
+    padding: 1rem 1.2rem;
+  }
+}
+@media (max-width: 350px) {
+  .contact-us-wrapper div:last-of-type textarea {
+    height: 200px;
+    width: 250px;
+  }
+}
+.contact-us-footer {
+  margin-top: 0;
+}
