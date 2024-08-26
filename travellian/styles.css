@@ -645,7 +645,7 @@ select#n-people:focus-visible {
 }
 .splide__arrow.splide__arrow--prev.left-arrow,
 .splide__arrow.splide__arrow--next.right-arrow {
-  top: -7%;
+  top: -6%;
 }
 .splide__arrow.splide__arrow--next.right-arrow {
   left: 5rem;
@@ -715,6 +715,9 @@ select#n-people:focus-visible {
 @media (max-width: 450px) {
   .s4-b {
     flex-wrap: wrap;
+  }
+  .splide__arrow.splide__arrow--next.right-arrow svg {
+    transform: rotate(270deg);
   }
   #s4-i {
     min-width: 100%;
@@ -814,7 +817,7 @@ select#n-people:focus-visible {
   margin-top: 5%;
 }
 #gallery .splide__track {
-  padding: 5%;
+  padding: 0 0 5% 0;
 }
 #gallery .splide__pagination__page {
   display: none;

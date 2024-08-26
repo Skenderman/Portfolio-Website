@@ -122,7 +122,7 @@ h3 {
   position: absolute;
   background-color: var(--main-white);
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
   top: 5rem;
   right: -700px;
   transition: all 0.3s;
@@ -239,6 +239,7 @@ h3 {
 .project-reverse {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid var(--main-black);
   align-items: center;

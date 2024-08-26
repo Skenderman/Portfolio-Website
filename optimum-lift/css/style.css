@@ -179,12 +179,13 @@ button:active {
     flex-direction: column;
     position: fixed;
     right: -400px;
-    top: 4svh;
+    top: 2.2rem;
     transition: 0.3s;
     background-color: var(--dark-color);
     height: 80svh;
     padding: 0 4rem;
     z-index: 10000;
+    border-bottom-left-radius: 30px;
   }
   .nav-bar-mobile.active {
     right: 0px;
@@ -236,6 +237,28 @@ button:active {
 .original-price {
   text-decoration: line-through 2px var(--red-color);
   margin-right: 10px;
+}
+.prod-counter {
+  display: flex;
+  border: 1px solid var(--dark-blue);
+  width: max-content;
+  border-radius: 12px;
+}
+.minus,
+.plus {
+  background-color: var(--light-blue);
+  padding: 0.1rem 0.3rem;
+}
+.minus {
+  border-radius: 12px 0 0 12px;
+}
+.plus {
+  border-radius: 0 12px 12px 0;
+}
+.counter-value {
+  padding: 0.1rem 1.5rem;
+  border-left: 1px solid var(--dark-blue);
+  border-right: 1px solid var(--dark-blue);
 }
 .price {
   display: flex;
@@ -467,7 +490,7 @@ button:active {
 }
 .review-txt {
   font-size: 0.65rem;
-  padding: 0 15px;
+  padding: 5px 15px;
 }
 .review-author {
   padding: 10px 15px;
@@ -515,17 +538,9 @@ button:active {
   width: 90%;
   margin: 0 auto;
 }
-
 .accordion {
   margin-bottom: 2%;
   cursor: pointer;
-}
-.accordion.aktiv .accordion-heading {
-  /* background-color: var(--dark-blue);
-  color: white; */
-}
-.accordion.aktiv .accordion-heading h3 {
-  /* color: white; */
 }
 .accordion.aktiv i {
   transform: rotate(180deg);
@@ -611,22 +626,29 @@ button:active {
   margin-top: 3%;
 }
 .s7-c {
-  max-width: 350px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgba(247, 247, 255, 0.25);
   border-radius: 10px;
   padding: 1rem 1.2rem;
 }
+.s7-c div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
 .s7-c img {
-  height: 250px;
-  border-radius: 50%;
+  width: 50%;
+  border-radius: 20px;
   object-fit: cover;
   box-shadow: 0.3px 0.3px 0.7px rgba(0, 0, 0, 0.006),
     0.7px 0.7px 1.6px rgba(0, 0, 0, 0.008), 1.4px 1.4px 3px rgba(0, 0, 0, 0.01),
     2.5px 2.5px 5.4px rgba(0, 0, 0, 0.012),
     4.6px 4.6px 10px rgba(0, 0, 0, 0.014), 11px 11px 24px rgba(0, 0, 0, 0.02);
+  margin-right: 2rem;
 }
 .s7-c h3 {
   margin-top: 2%;
@@ -639,16 +661,21 @@ button:active {
   margin: 5% 0;
   text-align: center;
 }
-.socials {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
+
+.socials p a {
+  color: var(--dark-color);
+  padding-bottom: 1rem;
 }
 @media (max-width: 650px) {
-  .s7-c-w {
+  .s7-c {
     flex-wrap: wrap;
   }
+  .s7-c img {
+    margin-right: 0;
+  }
+}
+@media (max-width: 320px) {
   .s7-c {
-    margin-top: 5%;
+    padding: 0;
   }
 }

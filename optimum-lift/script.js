@@ -12,6 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
     reviewsSlide.classList.toggle("active");
   });
 
+  // PROD COUNTER
+  const minus = document.querySelector(".minus");
+  const plus = document.querySelector(".plus");
+  const valueProd = document.querySelector(".counter-value");
+  const disPrice = document.getElementById("discounted-price");
+  let prodPrice = 29.9;
+  let currValue = 1;
+  minus.addEventListener("click", () => {
+    if (currValue > 1) {
+      currValue--;
+      newValue = prodPrice * currValue;
+      valueProd.textContent = currValue;
+    }
+    disPrice.textContent = newValue.toFixed(2) + "$";
+  });
+  plus.addEventListener("click", () => {
+    currValue++;
+    valueProd.textContent = currValue;
+    newValue = prodPrice * currValue;
+    disPrice.textContent = newValue.toFixed(2) + "$";
+  });
   // ACCORDION
   let accordions = document.querySelectorAll(".accordion-wrapper .accordion");
   accordions.forEach((acco) => {
@@ -19,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       accordions.forEach((subcontent) => {
         subcontent.classList.remove("aktiv");
       });
-      acco.classList.add("aktiv");
+      acco.classList.toggle("aktiv");
     };
   });
 

@@ -4,6 +4,8 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("active");
   menuContent.classList.toggle("active");
 });
+
+console.log(menu.getBoundingClientRect());
 // SPLIDE
 
 new Splide("#project-showcase", {
