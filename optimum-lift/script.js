@@ -13,34 +13,79 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // PROD COUNTER
-  const minus = document.querySelector(".minus");
-  const plus = document.querySelector(".plus");
-  const valueProd = document.querySelector(".counter-value");
-  const disPrice = document.getElementById("discounted-price");
-  let prodPrice = 29.9;
   let currValue = 1;
-  minus.addEventListener("click", () => {
+  let prodPrice = 29.9;
+
+  const minusHero = document.querySelector(".prod-counter .minus");
+  const plusHero = document.querySelector(".prod-counter .plus");
+  const valueProdHero = document.querySelector(".prod-counter .counter-value");
+  const disPriceHero = document.querySelector(".price .discounted-price");
+
+  const minusCart = document.querySelector("#cartMinus");
+  const plusCart = document.querySelector("#cartPlus");
+  const valueProdCart = document.querySelector("#cart-counter .counter-value");
+  const disPriceCart = document.querySelector("#cmimi");
+
+  // Function to update both the hero and cart counters
+  function updateAllCounters() {
+    valueProdHero.textContent = currValue;
+    valueProdCart.textContent = currValue;
+
+    const newValue = prodPrice * currValue;
+    disPriceHero.textContent = newValue.toFixed(2) + "$";
+    disPriceCart.textContent = newValue.toFixed(2) + "$";
+  }
+
+  // Event listener for the hero section buttons
+  minusHero.addEventListener("click", () => {
     if (currValue > 1) {
       currValue--;
-      newValue = prodPrice * currValue;
-      valueProd.textContent = currValue;
+      updateAllCounters();
     }
-    disPrice.textContent = newValue.toFixed(2) + "$";
   });
-  plus.addEventListener("click", () => {
+
+  plusHero.addEventListener("click", () => {
     currValue++;
-    valueProd.textContent = currValue;
-    newValue = prodPrice * currValue;
-    disPrice.textContent = newValue.toFixed(2) + "$";
+    updateAllCounters();
+  });
+
+  // Event listener for the cart buttons
+  minusCart.addEventListener("click", () => {
+    if (currValue > 1) {
+      currValue--;
+      updateAllCounters();
+    }
+  });
+
+  plusCart.addEventListener("click", () => {
+    currValue++;
+    updateAllCounters();
+  });
+  // Cart Open
+  const cart = document.querySelector(".shop-now");
+  const cartMobileBtn = document.querySelector(".shop-now-mobile");
+  const cartMenu = document.querySelector(".cart-w");
+  cart.addEventListener("click", () => {
+    cartMenu.classList.toggle("cartOpen");
+  });
+  cartMobileBtn.addEventListener("click", () => {
+    cartMenu.classList.toggle("cartOpen");
   });
   // ACCORDION
   let accordions = document.querySelectorAll(".accordion-wrapper .accordion");
+
   accordions.forEach((acco) => {
     acco.onclick = () => {
-      accordions.forEach((subcontent) => {
-        subcontent.classList.remove("aktiv");
-      });
-      acco.classList.toggle("aktiv");
+      // Check if the clicked accordion is already active
+      if (acco.classList.contains("aktiv")) {
+        acco.classList.remove("aktiv"); // Close the current accordion
+      } else {
+        // Remove "aktiv" from all other accordions
+        accordions.forEach((subcontent) => {
+          subcontent.classList.remove("aktiv");
+        });
+        acco.classList.add("aktiv"); // Open the clicked accordion
+      }
     };
   });
 

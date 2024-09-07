@@ -39,13 +39,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </ul>
         <button class="shop-now">
           <i class="fa-solid fa-cart-shopping"></i>
-          <a href="checkout.html">Shop Now</a>
+          <a href="#"> &nbsp;Cart</a>
         </button>
+
         <div id="hamburger-wrapper">
           <button class="shop-now-mobile">
-            <a href="checkout.html">
-              <i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <i class="fa-solid fa-cart-shopping"></i>
           </button>
           <div class="hamburger">
             <span class="bar"></span>
@@ -62,12 +61,44 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <li class="nav-mobile">
                 <a href="contact-us.html">Contact</a>
               </li>
-              <li class="nav-mobile menu-shop">
-                <a href="checkout.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
-              </li>
             </ul>
+          </div>
+        </div>
+        <div class="cart-w">
+          <div class="cart-i">
+            <img src="./img/file.png" alt="10 Week Fitness Workout Plan" />
+            <div class="cart-d">
+              <p>10 Week Fitness Workout Plan</p>
+              <p>Delivery: <span>Instant</span></p>
+              <div class="card-p">
+                <div id="cart-counter">
+                  <button id="cartMinus" class="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <p id="counter-txt" class="counter-value">1</p>
+                  <button id="cartPlus" class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <p id="cmimi" class="discounted-price">29.90$</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-checkout">
+            <div>
+              <input
+                type="text"
+                name="code"
+                id="code"
+                placeholder="Enter promotial code"
+              />
+              <button class="light-blue hero-btn2">Enter</button>
+            </div>
+            <a href="checkout.html"
+              ><button class="blue hero-btn1" id="checkoutBtn">
+                Checkout
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -99,7 +130,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <button class="plus"><i class="fa-solid fa-plus"></i></button>
           </div>
           <div class="price">
-            <h2 id="discounted-price">29.90$</h2>
+            <h2 class="discounted-price">29.90$</h2>
             <p class="original-price">79.99$</p>
           </div>
           <div class="hero-btns">
@@ -358,9 +389,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <i class="fas fa-angle-down"></i>
               </div>
               <p class="accordion-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                similique cupiditate doloribus! Quia nostrum fugiat molestiae
-                velit labore explicabo maiores!
+                Yes! The main point is that you can repeat each phase for as
+                long as you want, especialy the last two phases. You can repeat
+                the fisrt phase until you feel comfortable moving to the next
+                phase.
               </p>
             </div>
           </div>
@@ -371,9 +403,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <i class="fas fa-angle-down"></i>
               </div>
               <p class="accordion-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                similique cupiditate doloribus! Quia nostrum fugiat molestiae
-                velit labore explicabo maiores!
+                Unless you are sick or injured in some kind of way, make it a
+                habit to go to the gym, the workout plan gives your the road its
+                up to you to take it!
               </p>
             </div>
           </div>
@@ -387,9 +419,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <i class="fas fa-angle-down"></i>
               </div>
               <p class="accordion-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                similique cupiditate doloribus! Quia nostrum fugiat molestiae
-                velit labore explicabo maiores!
+                Yes, the workout plan is solely planned around a gym, there are
+                some exercises you can do at home on the first phase but almost
+                every exercise requires equipment.
               </p>
             </div>
           </div>
@@ -400,9 +432,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <i class="fas fa-angle-down"></i>
               </div>
               <p class="accordion-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                similique cupiditate doloribus! Quia nostrum fugiat molestiae
-                velit labore explicabo maiores!
+                This workout plan is designed for 4 days a week, for the reason
+                most of us are busy doing other things but still want to get in
+                great shape but dont have enough time. You can repeat the leg
+                day once more if you want to go 5 days a week.
               </p>
             </div>
           </div>
@@ -413,8 +446,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="s7-t">
             <h2>About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum
-              tenetur tempora provident, voluptate enim?
+              24 year old with a strong passion for lifting and building muscle.
             </p>
           </div>
           <div class="s7-c-w">
@@ -424,13 +456,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <h3>Brilant Krasniqi</h3>
                 <p>Founder</p>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis laborum blanditiis dolore inventore eum nesciunt?
+                  I've done countless hours of research on everything around the
+                  gym, from nutrition to the science of proteins. In this
+                  wourkout plan I've compiled everything I have learned so far
+                  and implemented it on every phase, I have created something
+                  that I would of wanted when I started working out!
                 </p>
                 <div class="socials">
                   <p>
-                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a
+                      href="https://www.instagram.com/brilantkrasniqi_/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram fa-lg"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/brilant-krasniqi-3128151b4/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin fa-lg"></i
+                    ></a>
                   </p>
                 </div>
               </div>
@@ -445,10 +488,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <h2><i class="fa-solid fa-dumbbell"></i> Optimum Lift</h2>
         </div>
         <div>
-          <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a> &nbsp;
-          <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a> &nbsp;
-          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a> &nbsp;
-          <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a> &nbsp;
+          <a
+            href="https://www.facebook.com/p/Optimum-Lift-61552660785721/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook fa-lg"></i
+          ></a>
+          &nbsp;
+
+          <a href="https://www.instagram.com/optimum_lift/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-lg"></i
+          ></a>
+          &nbsp;
         </div>
       </div>
       <div class="container sFin-2">

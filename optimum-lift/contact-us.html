@@ -43,13 +43,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </ul>
         <button class="shop-now">
           <i class="fa-solid fa-cart-shopping"></i>
-          <a href="checkout.html">Shop Now</a>
+          <a href="#"> &nbsp;Cart</a>
         </button>
+
         <div id="hamburger-wrapper">
           <button class="shop-now-mobile">
-            <a href="checkout.html">
-              <i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <i class="fa-solid fa-cart-shopping"></i>
           </button>
           <div class="hamburger">
             <span class="bar"></span>
@@ -70,12 +69,44 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <li class="nav-mobile">
                 <a href="contact-us.html">Contact</a>
               </li>
-              <li class="nav-mobile menu-shop">
-                <a href="checkout.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
-              </li>
             </ul>
+          </div>
+        </div>
+        <div class="cart-w">
+          <div class="cart-i">
+            <img src="./img/file.png" alt="10 Week Fitness Workout Plan" />
+            <div class="cart-d">
+              <p>10 Week Fitness Workout Plan</p>
+              <p>Delivery: <span>Instant</span></p>
+              <div class="card-p">
+                <div id="cart-counter">
+                  <button id="cartMinus" class="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <p id="counter-txt" class="counter-value">1</p>
+                  <button id="cartPlus" class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <p id="cmimi" class="discounted-price">29.90$</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-checkout">
+            <div>
+              <input
+                type="text"
+                name="code"
+                id="code"
+                placeholder="Enter promotial code"
+              />
+              <button class="light-blue hero-btn2">Enter</button>
+            </div>
+            <a href="checkout.html"
+              ><button class="blue hero-btn1" id="checkoutBtn">
+                Checkout
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -126,7 +157,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./cart.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
