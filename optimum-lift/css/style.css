@@ -371,10 +371,12 @@ button:active {
 .hero-btns {
   margin-top: 1rem;
   display: flex;
+  align-items: center;
 }
 .hero-btn1 {
   margin-right: 10px;
 }
+
 .prod-img {
   max-width: 600px;
 }

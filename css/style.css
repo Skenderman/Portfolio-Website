@@ -199,9 +199,14 @@ h3 {
 .project {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 1px solid var(--main-black);
   align-items: center;
   padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.project-info {
+  flex: 200%;
 }
 .project-info h2 {
   font-weight: 500;
@@ -231,6 +236,7 @@ h3 {
   transform: perspective(1500px) rotateY(-15deg);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   transition: transform 1s ease 0s;
+
   border-radius: 1rem;
   &:hover {
     transform: perspective(3000px) rotateY(5deg);
@@ -244,6 +250,7 @@ h3 {
   border-bottom: 1px solid var(--main-black);
   align-items: center;
   padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 /* CONTACT ME */
 .p-card {
